@@ -9,3 +9,4 @@ sudo yum install -y nodejs
 
 npm install express
 
+npm install ejs
