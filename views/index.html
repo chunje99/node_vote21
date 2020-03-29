@@ -1,9 +1,871 @@
-<html>
-  <head>
-    <title>Main</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    Hey, this is index page
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160766709-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160766709-1');
+</script>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://vote21.me/index.php">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보트미 : 총선용 한글주소 솔루션</title>
+    <meta name="keywords" content="보트미, 한글주소, 한글 단축주소, 선거운동 솔루션">
+    <meta name="description" content="보트미, 선거운동 한글주소 솔루션. 제21대 총선 후보를 위한 한글 링크주소 솔루션입니다.">
+
+    <link rel="shortcut icon" href="https://vote21.me/favicon.png" type="image/x-icon">
+    <link rel="icon" href="https://vote21.me/favicon.png" type="image/x-icon">
+
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="website">
+	<meta property="og:url" content="https://vote21.me/">
+	<meta property="og:site_name" content="총선용 한글주소 솔루션 패키지">
+	<meta property="og:title" content="총선용 한글주소 솔루션 서비스">
+	<meta property="og:description" content="비대면 온라인 선거운동의 새로운 해법 : 한글 링크주소 솔루션">
+    <meta property="og:image" content="https://vote21.me/web/images/og_bg_main_003.jpg">
+
+    <script src="https://kit.fontawesome.com/3e431866f3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Noto+Sans+KR|Roboto|Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://vote21.me/web/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://vote21.me/web/css/animate.css" />
+<style>
+html, body{
+    font-family: Roboto, 'Noto Sans KR', sans-serif;
+    color:#000;
+}
+.font-small {
+    font-size: .9rem;
+}
+.top-logo {
+    height:40px;
+}
+
+main {
+    padding-top:70px;
+}
+.bg-dark {
+    background-color:#1a1a1f !important;
+}
+.card {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.black-ms {
+    background-color: #1a1a1f !important;
+}
+.indigo {
+    background-color: #3f51b5 !important;
+}
+.deep-purple {
+    background-color: #673ab7 !important;
+}
+footer.page-footer {
+    bottom: 0;
+    color: #f8f9fa;
+}
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    color: rgba(255,255,255,0.6);
+    background-color: rgba(0,0,0,0.2);
+}
+footer.page-footer a {
+    color: #969696;
+}
+.z-depth-1, .chip:active {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+.nav-item {
+    font-size: 0.9em;
+    color:  #f8f9fa;
+}
+.nav-item a {
+    color:#f8f9fa !important;
+}
+.pricing-card {
+    text-align: center;
+}
+.pricing-card .price {
+    position: relative;
+    padding-top: 3.94rem;
+}
+.pricing-card .header {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+.white-text {
+    color: #fff !important;
+}
+.pricing-card .price .number {
+    padding: 1.5rem;
+    font-size: 5rem;
+    font-weight: 300;
+}
+.pricing-card .price .p-free {
+    padding: 1.5rem;
+    font-size: 5rem;
+    font-weight: 300;
+}
+.pricing-card .price .version {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: .25rem .25rem 0 0;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.pricing-card .striped {
+    padding: 1rem;
+}
+.pricing-card ul {
+    padding: 0;
+    list-style-type: none;
+}
+.pricing-card .striped li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(238,238,238,0.5);
+}
+.blue {
+    background-color: #2196f3 !important;
+}
+.btn-blue {
+    color: #fff !important;
+    background-color: #1976d2 !important;
+}
+.btn-indigo {
+    color: #fff !important;
+    background-color: #3f51b5 !important;
+}
+.btn-deep-purple {
+    color: #fff !important;
+    background-color: #512da8 !important;
+}
+.green-text {
+    color: #4caf50 !important;
+}
+.pricing-card .price .number::after {
+    position: absolute;
+    margin-top: 3rem;
+    font-size: 1.88rem;
+    content: "만원";
+}
+.pricing-card .price .p-free::after {
+    position: absolute;
+    margin-top: 3rem;
+    font-size: 1.88rem;
+    content: "원";
+}
+.btn {
+    margin: .375rem;
+    color: inherit;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: normal;
+    cursor: pointer;
+    border: 0;
+    border-radius: .125rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    -webkit-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+}
+.waves-effect {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.font-weight-black {
+    font-family: 'Black Han Sans', sans-serif;
+}
+.font-weight-medium {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 2.0em;
+}
+.btn-cyan {
+    color: #000 !important;
+    background-color: #6DF6FF !important;
+}
+.s_bg {
+      /* The image used */
+    background-image: url("/web/images/home/s_bg.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:#FFF;
+}
+.mobile-br {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-br {
+    display: inline;
+  }
+}
+.cdl-animate {
+  opacity: 0;
+}
+
+.cdl-animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.kick-msg {
+    background-color:#f4f4f4;
+    color: #0062ad;
+}
+</style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://vote21.me/"><img class="top-logo" src="https://vote21.me/web/images/home/logo.png"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto ml-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSd3tgy4KNCwm9Qfva16zF4CR4HRB6B7PQPZE6g1NBY5axu-fQ/viewform?usp=sf_link" target="_blank">무료한글주소 신청&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Product-Price">상품구성&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/open?id=1ysvlz9VF6BciOq8HIb7eVUPdZsmGLzpa" target="_blank">솔루션소개서&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeY1V_FhSmnb_IkCnJ0AMzo1Lyl7LyhIUrAATs2L4ryESLcOw/viewform?usp=sf_link" target="_blank">도입절차 1시간</a>
+                </li>
+                </ul>
+                <div class="d-inline"><a href="https://youtu.be/tzh6q49OqRE" target="_blank"><i class="fab fa-youtube" style="font-size:40px;color:red"></i></a></div>
+                <!-- <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!--Main layout-->
+    <main class="mt-5">
+
+    <!--Main container-->
+    <div class="container">
+
+        <!--Grid row-->
+        <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-7 mb-4">
+
+            <div class="card embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/tzh6q49OqRE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 mb-4">
+
+            <h1 class="text-center font-weight-black">선거용 <br class="mobile-br"/>한글주소 솔루션</h1>
+            <h5 class="text-center font-weight-bold">비대면 온라인 선거운동의<br/>"획기적인 솔루션"을 제안합니다!</h5>
+            <hr>
+            <p class="pl-0 pl-md-5 text-center text-md-left font-weight-bold">
+                유권자에게 친밀하고 거부감 없이 메세지 전달<br/>
+                유권자에게 직관적인 후보자 홍보 가능<br/>
+                유권자에게 후보자의 공약을 효과적으로 전달
+            </p>
+            <p class="kick-msg pl-0 pl-md-5 text-center text-md-left font-weight-bolder pt-3 pb-3">유권자들이 메세지를 클릭하고 싶게 만들어 드립니다.</p>
+            <p class="text-center">
+                <br/>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3tgy4KNCwm9Qfva16zF4CR4HRB6B7PQPZE6g1NBY5axu-fQ/viewform?usp=sf_link" target="_blank" class="btn btn-cyan font-weight-bolder">무료 서비스신청</a>
+            </p>
+
+        </div>
+        <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 cdl-animate">
+
+            <!--Card-->
+            <div class="card">
+            <!--Card content-->
+            <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title font-weight-medium text-center">친밀하고 거부감없이</h4>
+                <!--Text-->
+                <p class="card-text text-muted">
+                    알 수 없는 링크와 스팸 링크와는 달리 한글로 이루어져 친밀하고 거부감 없는 메세지 내용을 구성할 수 있습니다.
+                </p>
+            </div>
+            <!--Card image-->
+            <div class="view overlay">
+                <img src="https://vote21.me/web/images/home/s1-1.png" class="card-img-top"
+                alt="친밀하고 거부감 없는 한글주소 솔루션, 한글 단축주소">
+                <a href="#">
+                <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+
+
+
+            </div>
+            <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 cdl-animate">
+
+            <!--Card-->
+            <div class="card">
+            <!--Card content-->
+            <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title font-weight-medium text-center">직관적으로</h4>
+                <!--Text-->
+                <p class="card-text text-muted">
+                    자유로운 한글문구로 링크의 내용을 직관적으로 전달할 수 있습니다.<br/>영문, 특수문자, 한글 조합이 모두 가능합니다.
+                </p>
+            </div>
+            <!--Card image-->
+            <div class="view overlay">
+                <img src="https://vote21.me/web/images/home/s1-2.png" class="card-img-top"
+                alt="직관적인 한글주소 솔루션, 한글 단축주소">
+                <a href="#">
+                <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+
+
+
+            </div>
+            <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 cdl-animate">
+
+            <!--Card-->
+            <div class="card">
+            <!--Card content-->
+            <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title font-weight-medium text-center">효과적으로</h4>
+                <!--Text-->
+                <p class="card-text text-muted">
+                    메세지 내용 안의 링크를 클릭하는 비율이 비약적으로 증가합니다. 메세지 클릭수에 대한 통계 자료를 제공해 드립니다.
+                </p>
+            </div>
+            <!--Card image-->
+            <div class="view overlay">
+                <img src="https://vote21.me/web/images/home/s1-3.png" class="card-img-top"
+                alt="효과적인 한글주소 솔루션, 한글 단축주소">
+                <a href="#">
+                <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+
+
+
+            </div>
+            <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </div>
+    <!--Main container-->
+
+    </main>
+    <!--Main layout-->
+
+
+    <div class="container my-5 py-5">
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+        <!--Grid row-->
+        <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0">
+
+            <h1 class="font-weight-black">가. 한글단축주소</h1>
+            <p class="font-weight-bold">vote21.me/한글-문구.단어</p>
+            <p class="text-muted">                    
+                띄어쓰기 없이 어떠한 문구·단어도 표현이 가능합니다.<br class="mobile-br"/>(50글자 이내)<br/>
+                문구사이에특수문자를사용할수있습니다. <br class="mobile-br"/>(# % ? & 및공백제외)<br/>
+            </p>
+            <p style="line-height:2.0em">
+            예시)<br/>
+            <a href="https://vote12.me/이낙연이챙깁니다" target="_blank">vote21.me/<strong>이낙연이챙깁니다</strong></a><br/>
+            <a href="https://vote12.me/더불어민주당_대표주자_이낙연" target="_blank">vote21.me/<strong>더불어민주당_대표주자_이낙연</strong></a><br/>
+            <a href="https://vote12.me/국난극복,종로도약" target="_blank">vote21.me/<strong>국난극복,종로도약</strong></a><br/>
+            <a href="https://vote12.me/황교안2" target="_blank">vote21.me/<strong>황교안2</strong></a><br/>
+            <a href="https://vote12.me/종로=황교안" target="_blank">vote21.me/<strong>종로=황교안</strong></a>
+            </p>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0 cdl-animate" data-animate-effect="fadeInRight">
+
+            <!--Image-->
+            <div class="view overlay z-depth-1-half">
+            <img src="https://vote21.me/web/images/home/s2-1.png" class="img-fluid"
+                alt="한글 단축주소">
+            <a href="#">
+                <div class="mask rgba-white-light"></div>
+            </a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </section>
+    <!--Section: Content-->
+    </div>
+
+
+    <div class="container my-5 py-5">
+
+        <!--Section: Content-->
+        <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+    
+            <!--Grid row-->
+            <div class="row">
+    
+            <!--Grid column-->
+            <div class="order-2 order-md-1 col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center cdl-animate" data-animate-effect="fadeInLeft">
+    
+                <img src="https://vote21.me/web/images/home/s2-2.png" class="img-fluid" alt="메신저, 카카오톡 정보카드">
+
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="order-1 order-md-2 col-lg-6 mb-4 mb-lg-0">
+    
+                <h1 class="font-weight-black">나. 이미지 정보카드</h1>
+    
+                <p class="font-weight-bold">문자・카카오톡에 자동으로 노출되는 정보카드 맞춤 제공</p>
+    
+                <p class="text-muted">
+                    문자・카카오톡 내용에 링크주소가 포함되게 되면 자동으로 해당 링크의 정보카드가 보여지게 됩니다. 대부분의 정보카드는 후보자가 의도하지 않는 이미지와 정보를 보여주고 있습니다.
+                </p>
+    
+            </div>
+            <!--Grid column-->
+    
+            </div>
+            <!--Grid row-->
+
+        </section>
+        <!--Section: Content-->
+    </div>
+
+    <div class="container my-5 py-5">
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+        <!--Grid row-->
+        <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0">
+
+            <h1 class="font-weight-black">다. 슬로건메세지</h1>
+            <p class="font-weight-bold">후보자 메세지를 보여주는 중간페이지를 설정할 수 있습니다.</p>
+            <p class="text-muted">                    
+                한글단축주소를 이용하면 목적지 페이지가 보여지기 전에 후보자의 슬로건이나 로고, 포스터 등 원하는 정보를 보여줄 수 있습니다.
+
+            </p>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0 cdl-animate" data-animate-effect="fadeInRight">
+
+            <!--Image-->
+            <div class="view overlay z-depth-1-half">
+            <img src="https://vote21.me/web/images/home/s2-3.gif" class="img-fluid"
+                alt="후보자의 메세지를 전달하는 슬로건페이지">
+            <a href="#">
+                <div class="mask rgba-white-light"></div>
+            </a>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </section>
+    <!--Section: Content-->
+    </div>
+
+    <!--Section layout-->
+    <div class="container my-5 py-5 z-depth-1 s_bg">
+    <!--Section: Content-->
+    <section class="dark-grey-text text-center">
+        
+        <h3 class="font-weight-bold pt-3 pb-4">21대 총선은 "한글주소"가 <br class="mobile-br"/>정답입니다!</h3>
+
+        <div class="row mx-3">
+        <div class="col-md-4 px-4 mb-4 cdl-animate">
+
+            <div class="view">
+            <img src="https://vote21.me/web/images/home/s3-1.png" class="img-fluid" alt="코로나19확산 비대면 선거운동">
+            </div>
+
+        </div>
+        <div class="col-md-4 px-4 mb-4 cdl-animate">
+
+            <div class="view">
+            <img src="https://vote21.me/web/images/home/s3-2.png" class="img-fluid" alt="온라인 선거운동 시대">
+            </div>
+
+        </div>
+        <div class="col-md-4 px-4 mb-4 cdl-animate">
+
+            <div class="view">
+            <img src="https://vote21.me/web/images/home/s3-3.png" class="img-fluid" alt="난무하는 링크주소로 전달성과 신뢰성이 떨어짐">
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!--Section: Content-->
+    </div>
+
+    <div class="container my-5" id="Product-Price">
+    <!--Section: Content-->
+    <section class="text-center dark-grey-text">
+    
+        <!-- Section heading -->
+        <h1 class="font-weight-black pb-1 mb-2">솔루션 상품 구성</h1>
+        <h6 class="font-weight-bold pb-2 mb-4">가+나+다 = 하나의 묶음 상품(패키지)</h6>
+        <!-- Section description -->
+        <p class="text-muted w-responsive mx-auto mb-5">
+            • 이용금액은 서버 사용료와 네트워크 사용료가 <br class="mobile-br"/>모두 포함된 추가 비용이 없는 금액입니다.<br/>
+            • 글로벌 모바일 플랫폼과 클라우드 시스템 운용의 <br class="mobile-br"/>노하우가 있기에 가능한 금액입니다.
+        </p>
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-12 mb-4">
+    
+            <!-- Pricing card -->
+            <div class="card pricing-card">
+    
+            <!-- Price -->
+            <div class="price header white-text blue rounded-top">
+                <h2 class="p-free">0</h2>
+                <div class="version">
+                <h5 class="mb-0">무료 패키지</h5>
+                </div>
+            </div>
+    
+            <!-- Features -->
+            <div class="card-body striped mb-1">
+    
+                <ul>
+                    <li>
+                        <p class="mt-2"><i class="fas fa-check green-text pr-2"></i>1개 묶음 패키지 무료</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-check green-text pr-2"></i>기본 정보카드 제공</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-check green-text pr-2"></i>기본 슬로건 카드 제공</p>
+                    </li>
+                </ul>
+                <a class="btn btn-warning" href="https://docs.google.com/forms/d/e/1FAIpQLSeY1V_FhSmnb_IkCnJ0AMzo1Lyl7LyhIUrAATs2L4ryESLcOw/viewform?usp=sf_link" target="_blank">무료솔루션신청</a>
+    
+            </div>
+            <!-- Features -->
+    
+            </div>
+            <!-- Pricing card -->
+    
+        </div>
+        <!-- Grid column -->
+    
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+    
+            <!-- Pricing card -->
+            <div class="card pricing-card">
+    
+            <!-- Price -->
+            <div class="price header white-text indigo rounded-top">
+                <h2 class="number">50</h2>
+                <div class="version">
+                <h5 class="mb-0">기본 패키지</h5>
+                </div>
+            </div>
+    
+            <!-- Features -->
+            <div class="card-body striped mb-1">
+    
+                <ul>
+                <li>
+                    <p class="mt-2"><i class="fas fa-check green-text pr-2"></i>10개 묶음 패키지</p>
+                </li>
+                <li>
+                    <p><i class="fas fa-check green-text pr-2"></i>정보카드 맞춤제작</p>
+                </li>
+                <li>
+                    <p><i class="fas fa-check green-text pr-2"></i>슬로건 페이지 제작</p>
+                </li>
+                </ul>
+                <a class="btn btn-indigo" href="https://docs.google.com/forms/d/e/1FAIpQLSeY1V_FhSmnb_IkCnJ0AMzo1Lyl7LyhIUrAATs2L4ryESLcOw/viewform?usp=sf_link" target="_blank">상품신청</a>
+    
+            </div>
+            <!-- Features -->
+    
+            </div>
+            <!-- Pricing card -->
+    
+        </div>
+        <!-- Grid column -->
+    
+        <!-- Grid column -->
+        <div class="col-lg-4 col-md-6 mb-4">
+    
+            <!-- Pricing card -->
+            <div class="card pricing-card">
+    
+            <!-- Price -->
+            <div class="price header white-text deep-purple rounded-top">
+                <h2 class="number">100</h2>
+                <div class="version">
+                <h5 class="mb-0">프리미엄 패키지</h5>
+                </div>
+            </div>
+    
+            <!-- Features -->
+            <div class="card-body striped mb-1">
+    
+                <ul>
+                    <li>
+                        <p class="mt-2"><i class="fas fa-check green-text pr-2"></i>25개 묶음 패키지</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-check green-text pr-2"></i>정보카드 맞춤제작</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-check green-text pr-2"></i>슬로건 페이지 제작</p>
+                    </li>
+                </ul>
+                <a class="btn btn-deep-purple" href="https://docs.google.com/forms/d/e/1FAIpQLSeY1V_FhSmnb_IkCnJ0AMzo1Lyl7LyhIUrAATs2L4ryESLcOw/viewform?usp=sf_link" target="_blank">상품신청</a>
+    
+            </div>
+            <!-- Features -->
+    
+            </div>
+            <!-- Pricing card -->
+    
+        </div>
+        <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+    </section>
+    <!--Section: Content-->
+    
+    
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small black-ms pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+            <!-- Content -->
+            <h5 class="text-uppercase"><img class="top-logo" src="https://vote21.me/web/images/home/logo.png"/></h5>
+            <p>vote21.me는 21대 총선 선거운동을 위한 <br class="mobile-br"/>획기적인 솔루션을 제안합니다.<br/>
+            vote21.me는 정치적 중립을 지킬 것을 약속드립니다. 
+            </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h6>선거관련 서비스</h6>
+
+            <ul class="list-unstyled">
+                <li>
+                    <a href="http://policy.nec.go.kr/" target="_blank">정당별정책 바로가기</a>
+                </li>
+                <li>
+                <a href="https://news.naver.com/main/election/nation2020/index.nhn" target="_blank">네이버뉴스 특집페이지</a>
+            </li>
+            <li>
+                <a href="https://election.daum.net/20200415" target="_blank">다음뉴스 특집페이지</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/user/necpr" target="_blank">선관위 유튜브채널</a>
+            </li>
+            </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h6>중앙선거관리위원회</h6>
+            <p class="mb-1">위반행위신고 1390</p>
+
+            <ul class="list-unstyled">
+            <li>
+                <a href="https://www.nec.go.kr/portalVt/bbs/view/B0000342/40708.do?menuNo=200602&searchWrd=&searchCnd=&viewType=&pageIndex=1&section=&searchOption1=" target="_blank">투표소 안전보장</a>
+            </li>
+            <li>
+                <a href="javascript:alert('준비중입니다');">내 투표소</a>
+            </li>
+            <li>
+                <a href="http://law.nec.go.kr/lawweb/index.jsp" target="_blank">선거법령정보</a>
+            </li>
+            <li>
+                <a href="https://www.nec.go.kr/portal/contents.do?menuNo=200012" target="_blank">정치관계법질의</a>
+            </li>
+            </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 카피라이트 
+        <a href="#"> 주식회사 체리픽웍스</a>
+    </div>
+    <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://vote21.me/web/js/jquery.waypoints.min.js"></script>
+
+<script>
+    $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 700);
+    });
+    $(document).ready(function(){
+        var contentWayPoint = function() {
+        var i = 0;
+        $('.cdl-animate').waypoint( function( direction ) {
+    
+        if( direction === 'down' && !$(this.element).hasClass('cdl-animated') ) {
+            
+            i++;
+    
+            $(this.element).addClass('item-animate');
+            setTimeout(function(){
+    
+            $('body .cdl-animate.item-animate').each(function(k){
+                var el = $(this);
+                setTimeout( function () {
+                var effect = el.data('animate-effect');
+                if ( effect === 'fadeIn') {
+                    el.addClass('fadeIn cdl-animated');
+                } else if ( effect === 'fadeInLeft') {
+                    el.addClass('fadeInLeft cdl-animated');
+                } else if ( effect === 'fadeInRight') {
+                    el.addClass('fadeInRight cdl-animated');
+                } else {
+                    el.addClass('fadeInUp cdl-animated');
+                }
+                el.removeClass('item-animate');
+                },  k * 50, 'easeInOutExpo' );
+            });
+            
+            }, 100);
+            
+        }
+    
+        } , { offset: '95%' } );
+    };
+    contentWayPoint();
+    });
+    
+</script>
+</body>
 </html>
