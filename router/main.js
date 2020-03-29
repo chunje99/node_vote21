@@ -3,7 +3,10 @@ var qs = require('querystring');
 
 module.exports = function (app) {
    app.get('/', function (req, res) {
-      res.render('index.html')
+      res.render('index.html');
+   });
+   app.get('/favicon.ico', function (req, res) {
+      res.render('favicon.html');
    });
    app.get('/:name', function (req, res) {
       console.log(req.params.name);

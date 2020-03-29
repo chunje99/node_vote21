@@ -17,7 +17,11 @@ sudo node server.js
 
 ## html link location
 
-views/vote
+index.html    => views/index.html
+
+notfound.html => views/notfound.html
+
+etc           => views/vote/etc.html
 
 ex) https://vote21.me/진경수 => views/vote/진경수.html
 
